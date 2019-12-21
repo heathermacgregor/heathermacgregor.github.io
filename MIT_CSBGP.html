@@ -11,38 +11,94 @@
 
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.7/css/all.css">
+	<link href="https://use.fontawesome.com/releases/v5.0.7/css/brands.css" rel="stylesheet">
+	<link href="https://use.fontawesome.com/releases/v5.0.7/css/solid.css" rel="stylesheet">
+	<script src="https://use.edgefonts.net/source-sans-pro:n4,i4,n6.js"></script>
 <style>
 
-/* Style the button that is used to open and close the collapsible content */
-.collapsible {
-  background-color: #fff;
-  color: #000;
-  cursor: pointer;
-  padding: 8px;
-  width: 100%;
-  text-align: left;
-  font-family: monospace;
-  font-size: 15px;
+
+table#contact-info {
+	color: black;
+	background: black;
+	float: right;
+	width: 25px;
+	height: 15px;
+	padding: 10px 10px 7.5px 10px;
+	border-radius: 0px;
+	border: 1px solid black;
+	border-collapse: collapse;
+	padding: 5px;
+	font-size: 7pt;
+	font-weight: normal;
+	text-align: center;
 }
 
-/* Add a background color to the button if it is clicked on (add the .active class with JS), and when you move the mouse over it (hover) */
-.active, .collapsible:hover {
-  background-color: #fff;
+th#contact-info {
+	color: white;
+	background: black;
+	float: center;
+	width: 25px;
+	height: 15px;
+	padding: 10px 10px 7.5px 10px;
+	border-radius: 0px;
+	border: 3px solid white;
+	border-collapse: collapse;
+	padding: 5px;
+	font-size: 7pt;
+	font-weight: normal;
+	text-align: center;
 }
 
-/* Style the collapsible content. Note: hidden by default */
-.content {
-  padding: 0 18px;
-  display: none;
-  overflow: hidden;
-  background-color: #f1f1f1;
+h3#tit {
+	color: #b3b3b3;
+	float: left;
+	text-align: left;
+	weight: 100%;
 }
 
-.clearfix {
-  overflow: auto;
+a#icon {
+	color: white;
+	background: black;
 }
 
+a#icon:hover {
+	color: #d3d3d3;
+}
+
+.strokeme {
+  color: white;
+  text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
+}
+
+
+caption#contact-info {
+	caption-side: top;
+	text-align: left;
+	width: 20%;
+}
+
+table#headrow {
+	border-collapse: collapse;
+	width: 99%;
+	align: left;
+	padding: 5px 5px 5px 5px;
+	font-size: 9pt;
+	text-align: left;
+	font-weight: normal;
+}
+
+a#link {
+	color: black;
+	background: white;
+	width: 100%;
+	border-bottom: 1px dotted black;
+}
+
+th#r{
+	color: black;
+	text-align: right;
+}
 
 
 heading1 {
@@ -58,7 +114,8 @@ body {
   margin-right: 1.0in;
   margin-bottom: 0.75in;
   margin-left: 1.0in;
-  font-family: monospace;
+  font-family: "Arial", sans-serif;
+  font-weight: normal;
 }
 
 .header {
@@ -93,49 +150,214 @@ body {
   float: left;
 }
 
-/* Left and right column */
-.column.side {
-  width: 25%;
+html, body {
+	height: 100%;
+	overflow: hidden;
+	margin: 0;
 }
 
-/* Middle column */
-.column.middle {
-  width: 65%;
+#content {
+	height: 100%;
+	text-align: left;
 }
 
-/* Responsive layout - makes the three columns stack on top of each other instead of next to each other */
-@media screen and (max-width: 600px) {
-  .column.side, .column.middle {
-    width: 100%;
-  }
+#topper-l {
+	position: fixed;
+	color: white;
+	background: black;
+	float: left;
+	height: 10%;
+	left: 0%;
+	width: 30%;
+	overflow: hidden;
+	padding-bottom: 10px;
+	font-weight: normal;
+	border-bottom: 1.5px solid black;
 }
+
+#topper-r {
+	position: fixed;
+	color: white;
+	background: black;
+	float: left;
+	height: 10%;
+	left: 30%;
+	width: 100%;
+	overflow: hidden;
+	padding-bottom: 10px;
+	font-weight: normal;
+	border-bottom: 1.5px solid black;
+}
+
+#left {
+	position: fixed;
+	float: left;
+	height: 90%;
+	left: 2.5%;
+	right: 2.5%;
+	width: 20%;
+	background: #fff;
+	overflow: hidden;
+	padding: 10px;
+	font-size: 9px;
+	font-weight: normal;
+	top: 15%;
+}
+
+#right {
+	position: fixed;
+	float: left;
+	left: 30%;
+	height: 90%;
+	width: 75%;
+	overflow: auto;
+	top: 12.5%;
+}
+
+#right-content {
+	position: relative;
+	float: left;
+	width: 55%;
+	background: #fff;
+	height: 100%;
+	padding: 5px;
+}
+
+#education {
+	float: left;
+	text-align: left;
+	font-size: 9pt;
+	font-weight: normal;
+	width: 95%;
+	border-left: 0px solid #d3d3d3;
+	margin-left: 20px;
+	padding-left: 5px;
+	top: -10px;
+}
+
+#right-images {
+	position: relative;
+	float: right;
+	width: 35%;
+	height: 100%;
+	padding: 5px;
+	right: 50px;
+}
+
+img#icon {
+  border-radius: 5px;
+  float: left;
+  width: 40px;
+  height: 40px;
+}
+
+.tooltip {
+  position: relative;
+  display: inline-block;
+  border-bottom: 0px dotted black;
+}
+
+.tooltip .tooltiptext {
+  visibility: hidden;
+  width: 200px;
+  background-color: white;
+  color: #000;
+  text-align: left;
+  font-size: 10pt;
+  border-radius: 6px;
+  padding: 5px 0;
+
+  /* Position the tooltip */
+  position: absolute;
+  z-index: 1;
+}
+
+.tooltip:hover .tooltiptext {
+  visibility: visible;
+}
+
+p#abstract {
+  font-weight: em;
+  font-size: 9pt;
+  text-indent: 15px;
+  padding: 5px 0px 5px 5px;
+  border-left: 1px solid black;
+}
+
+th#icon {
+	color: black;
+	float: left;
+	background: white;
+	text-align: left;
+	width: 19%;
+}
+
+a#r {
+	text-align: right;
+	float: right;
+}
+
+ol {
+  font-size: 7pt;
+  font-weight: normal;
+}
+
 
 </style>
 </head>
 
 <body>
-  <header><h1>Heather MacGregor</h1></header>
+<div id="content">
+	<div id="topper-l">
 
-  <table style="width:100%">
-  <tr>
-    <th><i class="fa fa-phone" style="font-size:15px"></i> (530) 350-0171</th>
-    <th><i class="fa fa-envelope" style="font-size:15px"></i> macgregor&#64;ucsb.edu</th>
-    <th><i class="fa fa-linkedin-square" style="font-size:15px"></i> <a href="https://linkedin.com/in/heathermacgregor/">heathermacgregor</a></th>
-    <th><i class="fa fa-github" style="font-size:15px"></i> <a href="https://github.com/heathermacgregor">heathermacgregor</a></th>
-  </tr>
-  </table>
-
-	<div class="topnav">
-	  <a href="presentations.html">Recent Presentations</a>
-	  <a href="sample_images.html">Sample Figures</a>
 	</div>
+	<div id="topper-r">
+		<header><h1>Heather MacGregor</h1></header>
+	</div>
+	<div id="left">
+		<table id="contact-info">
+  			<tr>
+	  			<th id="contact-info"><a id="icon" href=""><i class="fa fa-phone" style="font-size:15px"></i></a></th>
+			</tr>
+			<tr>
+				<th id="contact-info"><a id="icon" href="mailto:macgregor@ucsb.edu"><i class="fa fa-envelope" style="font-size:15px"></i></a></th>
+			</tr>
+			<tr>
+				<th id="contact-info"><a id="icon" href="https://linkedin.com/in/heathermacgregor/"><i class="fab fa-linkedin" style="font-size:15px"></i></a></th>
+			</tr>
+			<tr>
+				<th id="contact-info"><a id="icon" href="https://github.com/heathermacgregor"><i class="fab fa-git" style="font-size:15px"></i></a></th>
+			</tr>
+			<tr>
+				<th id="contact-info"><a id="icon" href="https://jsfiddle.net/user/macgregor/fiddles/"><i class="fab fa-jsfiddle"></i></a></th>
+			</tr>
+			<tr>
+				<th id="contact-info"><a id="icon" title="Poster Presentations" href="C:/Users/15303/Documents/GitHub/heathermacgregor.github.io/presentations.html"><i class="fas fa-file-powerpoint"></i></a></th>
+			</tr>
+			<tr>
+				<th id="contact-info"><a id="icon" title="Figures" href="C:/Users/15303/Documents/GitHub/heathermacgregor.github.io/sample_images.html"><i class="fas fa-file-image"></i></a></th>
+			</tr>
+			<tr>
+				<th id="contact-info"><a id="icon" title="Downloads" href="C:/Users/15303/Documents/GitHub/heathermacgregor.github.io/downloads.html"><i class="fas fa-file-archive"></i></a></th>
+			</tr>
+			<tr>
+				<th id="contact-info"><a id="icon" title="Downloads" href="C:/Users/15303/Documents/GitHub/heathermacgregor.github.io/downloads.html"><i class="fas fa-copy"></i></a></th>
+			</tr>
+  		</table>
+		<figure>
+			<img title="THE RIBONUCLEASE H DOMAIN OF HIV-1 REVERSE TRANSCRIPTASE [PDB ID 1HRH]" src="Images/1hrh.pdb.png" width="100%">
+		</figure>
+  	</div>
+	<div id="right">
+		<div id="right-content">
+				<figure>
+		            <embed src="Attachments/Heather-MacGregor_Statement-of-Objectives_MIT-CSBGP.pdf" type="application/pdf" width="100%" height="600px" />
+	            </figure>
+    </div>
+		<div id="right-images">
 
-	<figure>
-		<embed src="Attachments/Heather-MacGregor_Statement-of-Objectives_MIT-CSBGP.pdf" type="application/pdf" width="100%" height="600px" />
-	</figure>
+		</div>
+	</div>
+</div>
 </body>
 </html>
-
-
-
-

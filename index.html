@@ -11,38 +11,94 @@
 
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.7/css/all.css">
+	<link href="https://use.fontawesome.com/releases/v5.0.7/css/brands.css" rel="stylesheet">
+	<link href="https://use.fontawesome.com/releases/v5.0.7/css/solid.css" rel="stylesheet">
+	<script src="https://use.edgefonts.net/source-sans-pro:n4,i4,n6.js"></script>
 <style>
 
-/* Style the button that is used to open and close the collapsible content */
-.collapsible {
-  background-color: #fff;
-  color: #000;
-  cursor: pointer;
-  padding: 8px;
-  width: 100%;
-  text-align: left;
-  font-family: monospace;
-  font-size: 15px;
+
+table#contact-info {
+	color: black;
+	background: black;
+	float: right;
+	width: 25px;
+	height: 15px;
+	padding: 10px 10px 7.5px 10px;
+	border-radius: 0px;
+	border: 1px solid black;
+	border-collapse: collapse;
+	padding: 5px;
+	font-size: 7pt;
+	font-weight: normal;
+	text-align: center;
 }
 
-/* Add a background color to the button if it is clicked on (add the .active class with JS), and when you move the mouse over it (hover) */
-.active, .collapsible:hover {
-  background-color: #fff;
+th#contact-info {
+	color: white;
+	background: black;
+	float: center;
+	width: 25px;
+	height: 15px;
+	padding: 10px 10px 7.5px 10px;
+	border-radius: 0px;
+	border: 3px solid white;
+	border-collapse: collapse;
+	padding: 5px;
+	font-size: 7pt;
+	font-weight: normal;
+	text-align: center;
 }
 
-/* Style the collapsible content. Note: hidden by default */
-.content {
-  padding: 0 18px;
-  display: none;
-  overflow: hidden;
-  background-color: #f1f1f1;
+h3#tit {
+	color: #b3b3b3;
+	float: left;
+	text-align: left;
+	weight: 100%;
 }
 
-.clearfix {
-  overflow: auto;
+a#icon {
+	color: white;
+	background: black;
 }
 
+a#icon:hover {
+	color: #d3d3d3;
+}
+
+.strokeme {
+  color: white;
+  text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
+}
+
+
+caption#contact-info {
+	caption-side: top;
+	text-align: left;
+	width: 20%;
+}
+
+table#headrow {
+	border-collapse: collapse;
+	width: 99%;
+	align: left;
+	padding: 5px 5px 5px 5px;
+	font-size: 9pt;
+	text-align: left;
+	font-weight: normal;
+}
+
+a#link {
+	color: black;
+	background: white;
+	width: 100%;
+	border-bottom: 1px dotted black;
+}
+
+th#r{
+	color: black;
+	text-align: right;
+}
 
 
 heading1 {
@@ -58,7 +114,8 @@ body {
   margin-right: 1.0in;
   margin-bottom: 0.75in;
   margin-left: 1.0in;
-  font-family: monospace;
+  font-family: "Arial", sans-serif;
+  font-weight: normal;
 }
 
 .header {
@@ -93,277 +150,489 @@ body {
   float: left;
 }
 
-/* Left and right column */
-.column.side {
-  width: 25%;
+html, body {
+	height: 100%;
+	overflow: hidden;
+	margin: 0;
 }
 
-/* Middle column */
-.column.middle {
-  width: 65%;
+#content {
+	height: 100%;
+	text-align: left;
 }
 
-/* Responsive layout - makes the three columns stack on top of each other instead of next to each other */
-@media screen and (max-width: 600px) {
-  .column.side, .column.middle {
-    width: 100%;
-  }
+#topper-l {
+	position: fixed;
+	color: white;
+	background: black;
+	float: left;
+	height: 10%;
+	left: 0%;
+	width: 30%;
+	overflow: hidden;
+	padding-bottom: 10px;
+	font-weight: normal;
+	border-bottom: 1.5px solid black;
 }
+
+#topper-r {
+	position: fixed;
+	color: white;
+	background: black;
+	float: left;
+	height: 10%;
+	left: 30%;
+	width: 100%;
+	overflow: hidden;
+	padding-bottom: 10px;
+	font-weight: normal;
+	border-bottom: 1.5px solid black;
+}
+
+#left {
+	position: fixed;
+	float: left;
+	height: 90%;
+	left: 2.5%;
+	right: 2.5%;
+	width: 20%;
+	background: #fff;
+	overflow: hidden;
+	padding: 10px;
+	font-size: 9px;
+	font-weight: normal;
+	top: 15%;
+}
+
+#right {
+	position: fixed;
+	float: left;
+	left: 30%;
+	height: 90%;
+	width: 75%;
+	overflow: auto;
+	top: 12.5%;
+}
+
+#right-content {
+	position: relative;
+	float: left;
+	width: 55%;
+	background: #fff;
+	height: 100%;
+	padding: 5px;
+}
+
+#education {
+	float: left;
+	text-align: left;
+	font-size: 9pt;
+	font-weight: normal;
+	width: 95%;
+	border-left: 0px solid #d3d3d3;
+	margin-left: 20px;
+	padding-left: 5px;
+	top: -10px;
+}
+
+#right-images {
+	position: relative;
+	float: right;
+	width: 35%;
+	height: 100%;
+	padding: 5px;
+	right: 50px;
+}
+
+img#icon {
+  border-radius: 5px;
+  float: left;
+  width: 40px;
+  height: 40px;
+}
+
+.tooltip {
+  position: relative;
+  display: inline-block;
+  border-bottom: 0px dotted black;
+}
+
+.tooltip .tooltiptext {
+  visibility: hidden;
+  width: 200px;
+  background-color: white;
+  color: #000;
+  text-align: left;
+  font-size: 10pt;
+  border-radius: 6px;
+  padding: 5px 0;
+
+  /* Position the tooltip */
+  position: absolute;
+  z-index: 1;
+}
+
+.tooltip:hover .tooltiptext {
+  visibility: visible;
+}
+
+
+th#icon {
+	color: black;
+	float: left;
+	background: white;
+	text-align: left;
+	width: 19%;
+}
+
+a#r {
+	text-align: right;
+	float: right;
+}
+
 
 </style>
 </head>
 
 <body>
-  <header><h1>Heather MacGregor</h1></header>
+<div id="content">
+	<div id="topper-l">
 
-  <table style="width:100%">
-  <tr>
-    <th><i class="fa fa-phone" style="font-size:15px"></i> (530) 350-0171</th>
-    <th><i class="fa fa-envelope" style="font-size:15px"></i> macgregor&#64;ucsb.edu</th>
-    <th><i class="fa fa-linkedin-square" style="font-size:15px"></i> <a href="https://linkedin.com/in/heathermacgregor/">heathermacgregor</a></th>
-    <th><i class="fa fa-github" style="font-size:15px"></i> <a href="https://github.com/heathermacgregor">heathermacgregor</a></th>
-  </tr>
-  </table>
-
-	<div class="topnav">
-	  <a href="presentations.html">Recent Presentations</a>
-	  <a href="sample_images.html">Sample Figures</a>
 	</div>
-
-<div class="row">
-  <div class="column middle">
-	<h2>Education</h2>
-	  <ul>
-	    <li>
-	      <b><heading1>University of California, Santa Barbara</heading1> <date>09/2016 - 07/2020</date></b>
-	      <br>
-	      <b><em>College of Creative Studies,</em></b>
-	      B.S. Biochemistry <date>GPA 3.8 of 4.0</date>
-	    </li>
-	    <li>
-	      <b><heading1>Ponderosa High School</heading1> <date>08/2012 - 05/2016</date></b>
-	      <br>
-	      High School Diploma
-	    </li>
-	  </ul>
-
-	  <h2>Research Experience</h2>
-	  <ul>
-	    <li>
-	      <b><heading1>Department of Chemistry and Biochemistry, UC Santa Barbara</heading1> <date>03/2018 -<pre>        </pre></date></b>
-	      <br>
-	      <b><em>Principal Investigator:</em></b> Kalju Kahn
-	      <ul>
-	        <li>Determined a set of computational approaches using the Gaussian 16 program most appropriate for accurate calculation of the vibrational circular dichroism spectrum of chiral molecules while minimizing computational cost.</li>
-	        <li>Developed software to automate job submission, batch creation of input files, and perform detailed analysis of large volumes of output data.</li>
-	      </ul>
-	    </li>
-
-	    <li>
-	      <b><heading1>Cheadle Center for Biodiversity and Ecological Restoration, UC Santa Barbara</heading1> <date>08/2019 -<pre>        </pre></date></b>
-	      <br>
-	      <b><em>Principal Investigator:</em></b> Katja Seltmann
-	      <ul>
-	        <li>Independently developed software to enable automation of routine analysis, integration, and visualization of large volumes of environmental and geospatial data collected by remote sensors on a local server.</li>
-	        <li>Designed a GUI utilizing the Box API to allow public access to the raw data.</li>
-	        <li>Worked within the Drupal framework to port the application to a web environment.</li>
-	      </ul>
-	    </li>
-
-
-	    <li>
-	      <b><heading1>Department of Neuroscience, Sackler School of Graduate Biomedical Sciences, Tufts University</heading1> <date>05/2019 - 08/2019</date></b>
-	      <br>
-	      <b><em>Principal Investigator:</em></b> Maribel Rios
-	      <ul>
-	        <li>Performed dissection of the model animal and cryostat brain tissue sectioning in regions of interest.</li>
-	        <li>Optimized an existing immunofluorescence protocol to best simultaneously visualize pre- and post-synaptic GABAergic synaptic terminals. Processed confocal microscope images using the Synapse Counter plugin for FIJI ImageJ.</li>
-	        <li>Performed routine genotyping of the mouse colony and assisted senior members with perfusions.</li>
-	      </ul>
-	    </li>
-
-	    <li>
-	      <b><heading1>Cheadle Center for Biodiversity and Ecological Restoration, UC Santa Barbara</heading1> <date>06/2016 - 03/2017</date></b>
-	      <br>
-	      <b><em>Supervisor:</em></b> Andy Lanes
-	      <ul>
-	        <li>Collected field data on vernal pools in the Manzanita Village Restoration Area.</li>
-	        <li>Removed and documented invasive plant species.</li>
-	      </ul>
-	    </li>
-	  </ul>
-
-	<h2>Publications</h2>
-
-	  <ul>
-	    <li><b>Benchmarking Density Functional Methods for Prediction of Gas-Phase Vibrational Circular Dichroism Spectra.</b> H. R. MacGregor, K. Kahn. <em>Submitted.</em> (2019)</li>
-	  </ul>
-
-	<h2>Grants and Fellowships</h2>
-
-	  <ul>
-	    <li>
-	      <b><heading1>Undergraduate Research Internship Grant</heading1> <date>09/2019</date></b>
-	      <br>
-	      <b><em>UC Santa Barbara, Cheadle Center for Biodiversity and Ecological Restoration</em></b>
-	    </li>
-	    <li>
-	      <b><heading1>CCS Summer Undergraduate Research Fellowship</heading1> <date>08/2019</date></b>
-	      <br>
-	      <b><em>UC Santa Barbara, College of Creative Studies</em></b>
-	      <em>The Axline Family</em>
-	    </li>
-	    <li>
-	      <b><heading1>Building Diversity in Biomedical Sciences Summer Research Program</heading1> <date>05/2019</date></b>
-	      <br>
-	      <b><em>Tufts University, Sackler School of Graduate Biomedical Sciences</em></b>
-	      <em>NIH Award #R25HL007785</em>
-	    </li>
-	    <li>
-	      <b><heading1>Cooperative International Science and Engineering Internship (Declined)</heading1> <date>05/2019</date></b>
-	      <br>
-	      <b><em>Eindhoven University of Technology & UC Santa Barbara</em></b>
-	      <em>Materials Research Laboratory & NSF REU</em>
-	    </li>
-	    <li>
-	      <b><heading1>Gorman Scholars Program (Declined)</heading1> <date>05/2019</date></b>
-	      <br>
-	      <b><em>UC Santa Barbara, Center for Science and Engineering Partnerships</em></b>
-	      <em>The Gorman Family</em>
-	    </li>
-	    <li>
-	      <b><heading1>Partnership for Research and Education in Materials Internship (Declined)</heading1> <date>05/2019</date></b>
-	      <br>
-	      <b><em>University of Texas El Paso & UC Santa Barbara</em></b>
-	      <em>Materials Research Laboratory & UTEP</em>
-	    </li>
-	    <li>
-	      <b><heading1>Edison Summer Research Program</heading1> <date>06/2018</date></b>
-	      <br>
-	      <b><em>UC Santa Barbara, McNair Scholars Program</em></b>
-	      <em>Edison International</em>
-	    </li>
-	  </ul>
-
-	<h2>Honors and Awards</h2>
-
-	  <ul>
-	    <li>
-	      <b><heading1>Diversity in Graduate Studies (DIGS) Visitation Program</heading1> <date>11/2019</date></b>
-	      <br>
-	      <b><em>Office of Graduate Admissions, Rensselaer Polytechnic Institute</em></b>
-	    </li>
-	    <li>
-	      <b><heading1>Purdue Graduate Diversity Visitation Program</heading1> <date>11/2019</date></b>
-	      <br>
-	      <b><em>Office of Graduate Diversity, Purdue University</em></b>
-	    </li>
-	    <li>
-	      <b><heading1>The Pennsylvania State University STEM Fall Open House</heading1> <date>10/2019</date></b>
-	      <br>
-	      <b><em>Office of Graduate Educational Equity Programs, Penn State University Park</em></b>
-	    </li>
-	    <li>
-	      <b><heading1>Undergraduate Student Travel Award</heading1> <date>09/2019</date></b>
-	      <br>
-	      <b><em>Annual Biomedical Research Conference for Minority Students</em></b>
-	    </li>
-	    <li>
-	      <b><heading1>Edison GRE Preparation Course Scholarship</heading1> <date>04/2019</date></b>
-	      <br>
-	      <b><em>McNair Scholars Program, UC Santa Barbara</em></b>
-	      <em>Edison International</em>
-	    </li>
-	    <li>
-	      <b><heading1>Director's Award</heading1> <date>05/2016</date></b>
-	      <br>
-	      <b><em>Ponderosa High School Music Program</em></b>
-	    </li>
-	  </ul>
-
-
-	<h2>Work Experience</h2>
-
-	  <ul>
-	    <li>
-	      <b><heading1>Chemistry and Biochemistry Research Storeroom, UC Santa Barbara</heading1> <date>11/2018 -<pre>        </pre></date></b>
-	      <br>
-	      <b><em>Storeroom Assistant</em></b>
-	      <ul>
-	        <li>Stocked and filled orders for chemicals and laboratory supplies to research/instructional labs using the 4D relational database management system.</li>
-	        <li>Assisted with miscellaneous shipping and receiving duties as assigned by supervisor</li>
-	      </ul>
-	    </li>
-
-	    <li>
-	      <b><heading1>Disabled Students Program, UC Santa Barbara</heading1> <date>11/2016 -<pre>        </pre></date></b>
-	      <br>
-	        <b><em>Notetaker and Exam Proctor</em></b>
-	      <ul>
-	        <li>Acted as a liason between clients and their instructor while maintaining the integrity of the testing environment and ensuring that the client received the correct accommodation.</li>
-	        <li>Provided a detailed, time-stamped report to supervisors for each accommodation.</li>
-	        <li>Took clear, detailed notes for an ongoing course and uploaded them to an online portal in a timely manner.</li>
-	      </ul>
-	    </li>
-	  </ul>
-
-	<h2>Outreach and Societies</h2>
-	  <ul>
-	    <li>
-	      <b><heading1>Women in Science and Engineering (WiSE) Mentorship Program</heading1> <date>09/2019 -<pre>        </pre></date></b>
-	      <ul><li>Mentored first- and second-year female-identifying students in science and engineering majors.</li></ul>
-	    </li>
-
-	    <li>
-	      <b><heading1>Biology Mentoring and Engagement</heading1> <date>09/2019 -<pre>        </pre></date></b>
-	      <ul><li>Mentored a small group of first-year pre-biology students.</li></ul>
-	    </li>
-
-	    <li>
-	      <b><heading1>SciTrek</heading1> <date>01/2019 -<pre>        </pre></date></b>
-	      <ul><li>Worked with a team to develop and implement the organization's first high school program
-	focusing on analytical tests of biological macromolecules.</li><li>Coordinated with ASBMB board members to recruit volunteers for the high school module.</li><li>Worked with a team to compile scientific literature focused on active learning for eventual use
-	in a journal publication.</li></ul>
-	    </li>
-
-	    <li>
-	      <b><heading1>College of Creative Studies Peer Mentorship Program</heading1> <date>09/2017 -<pre>        </pre></date></b>
-	      <ul><li>Served as a mentor and resource to first-year CCS students with similar academic and career interests.</li></ul>
-	    </li>
-
-	    <li>
-	      <b><heading1>American Physical Society Conference for Undergraduate Women in Physics</heading1> <date>01/2019 - 01/2019</date></b>
-	      <ul><li>Prepared conference materials and checked in attendees, then served as a point of contact between attendees and
-	organizers for the duration of the event.</li></ul>
-	    </li>
-
-	    <li>
-	      <b><heading1>American Society for Biochemistry and Molecular Biology (Board Member)</heading1> <date>09/2018 -<pre>        </pre></date></b>
-	      <ul><li>Planned and coordinated chapter events including career development, lab & industry tours, fundraising, research
-	talks, and more.</li><li>Developed and maintained the chapter website and Facebook page.</li></ul>
-	    </li>
-
-	    <li>
-	      <b><heading1>Residence Hall Association</heading1> <date>09/2016 - 06/2017</date></b>
-	      <ul><li>Worked with a team of House Representatives from Manzanita Village and San Rafael Residance Halls to select
-	which programs would receive university funds and planned activities for students living in UCSB housing on- and
-	off-campus.</li></ul>
-	    </li>
-	  </ul>
+	<div id="topper-r">
+		<header><h1>Heather MacGregor</h1></header>
 	</div>
-	<div class="column side">
-		<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
-	    <figure>
-		  <img src="Images/IMG_1458.JPG" alt="Poster" width="300">
-		</figure>
-		<br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+	<div id="left">
+		<table id="contact-info">
+  			<tr>
+	  			<th id="contact-info"><a id="icon" href=""><i class="fa fa-phone" style="font-size:15px"></i></a></th>
+			</tr>
+			<tr>
+				<th id="contact-info"><a id="icon" href="mailto:macgregor@ucsb.edu"><i class="fa fa-envelope" style="font-size:15px"></i></a></th>
+			</tr>
+			<tr>
+				<th id="contact-info"><a id="icon" href="https://linkedin.com/in/heathermacgregor/"><i class="fab fa-linkedin" style="font-size:15px"></i></a></th>
+			</tr>
+			<tr>
+				<th id="contact-info"><a id="icon" href="https://github.com/heathermacgregor"><i class="fab fa-git" style="font-size:15px"></i></a></th>
+			</tr>
+			<tr>
+				<th id="contact-info"><a id="icon" href="https://jsfiddle.net/user/macgregor/fiddles/"><i class="fab fa-jsfiddle"></i></a></th>
+			</tr>
+			<tr>
+				<th id="contact-info"><a id="icon" title="Poster Presentations" href="C:/Users/15303/Documents/GitHub/heathermacgregor.github.io/presentations.html"><i class="fas fa-file-powerpoint"></i></a></th>
+			</tr>
+			<tr>
+				<th id="contact-info"><a id="icon" title="Figures" href="C:/Users/15303/Documents/GitHub/heathermacgregor.github.io/sample_images.html"><i class="fas fa-file-image"></i></a></th>
+			</tr>
+			<tr>
+				<th id="contact-info"><a id="icon" title="Downloads" href="C:/Users/15303/Documents/GitHub/heathermacgregor.github.io/downloads.html"><i class="fas fa-file-archive"></i></a></th>
+			</tr>
+			<tr>
+				<th id="contact-info"><a id="icon" title="Downloads" href="C:/Users/15303/Documents/GitHub/heathermacgregor.github.io/downloads.html"><i class="fas fa-copy"></i></a></th>
+			</tr>
+  		</table>
 		<figure>
-		  <img src="Images/IMG_1356.JPG" alt="Poster" width="300">
+			<img title="THE RIBONUCLEASE H DOMAIN OF HIV-1 REVERSE TRANSCRIPTASE [PDB ID 1HRH]" src="Images/1hrh.pdb.png" width="100%">
 		</figure>
-		<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
-		<figure>
-		  <img src="Images/CUWiP.jfif" alt="Poster" width="300">
-		</figure>
+  	</div>
+	<div id="right">
+		<div id="right-content">
+			<h3>Education</h3>
+			<div id="education">
+				<table id="headrow">
+					<tr>
+						<th width="75%">University of California, Santa Barbara </th>
+						<th><i class="fas fa-calendar-alt"></i> 09/2016 - 07/2020</th>
+					</tr>
+					<tr>
+						<th><em>College of Creative Studies, B.S. Biochemistry</em></th>
+					</tr>
+					<tr>
+						<th>GPA 3.8 of 4.0</th>
+					</tr>
+				</table>
+				<br>
+				<table id="headrow">
+					<tr>
+						<th width="75%">Ponderosa High School</th>
+						<th><i class="fas fa-calendar-alt"></i> 08/2012 - 05/2016</th>
+					</tr>
+					<tr>
+						<th><b><em>High School Diploma</em></b></th>
+					</tr>
+				</table>
+				<br>
+			</div>
+			<hr>
+			<h3>Research Experience</h3>
+			<div id="education">
+				<table id="headrow">
+					<tr>
+						<th width="75%">University of California, Santa Barbara</th>
+						<th><i class="fas fa-calendar-alt"></i> 03/2018 - <a href="https://people.chem.ucsb.edu/kahn/kalju/"><i class="fas fa-link"></i></a></th>
+					</tr>
+					<tr>
+						<th><em>Department of Chemistry and Biochemistry</em></th>
+					</tr>
+					<tr>
+						<th><em>Principal Investigator: </em>Kalju Kahn</th>
+					</tr>
+					<tr>
+						<th><ul>
+							<li>Determined a set of computational approaches using the Gaussian 16 program most appropriate for accurate calculation of the vibrational circular dichroism spectrum of chiral molecules while minimizing computational cost.</li>
+							<li>Developed software to automate job submission, batch creation of input files, and perform detailed analysis of large volumes of output data.</li>
+						</ul></th>
+					</tr>
+				</table>
+				<table id="headrow">
+					<tr>
+						<th width="75%">University of California, Santa Barbara</th>
+						<th><i class="fas fa-calendar-alt"></i> 09/2016 - </th>
+					</tr>
+					<tr>
+						<th width="75%">Cheadle Center for Biodiversity and Ecological Restoration</th>
+						<th></th>
+					</tr>
+					<tr>
+						<th width="75%"><em>Principal Investigator: </em>Katja Seltmann</th>
+						<th><i class="fas fa-calendar-alt"></i> 09/2018 - </th>
+					</tr>
+					<tr>
+						<th><ul>
+							<li>Independently developed software to enable automation of routine analysis, integration, and visualization of large volumes of environmental and geospatial data collected by remote sensors on a local server.</li>
+							<li>Designed a GUI utilizing the Box API to allow public access to the raw data.</li>
+							<li>Worked within the Drupal framework to port the application to a web environment.</li>
+				  		</ul></th>
+					</tr>
+					<tr>
+						<th width="75%"><em>Principal Investigator:</em> Andy Lanes</th>
+						<th><i class="fas fa-calendar-alt"></i> 09/2016 - 03/2017</th>
+					</tr>
+					<tr>
+						<th><ul>
+							<li>Collected field data on vernal pools in the Manzanita Village Restoration Area.</li>
+							<li>Removed and documented invasive plant species.</li>
+				  		</ul></th>
+					</tr>
+				</table>
+			</div>
+			<div id="education">
+				<table id="headrow">
+					<tr>
+						<th width="75%"><b>Tufts School of Graduate Biomedical Sciences</b></th>
+						<th><i class="fas fa-calendar-alt"></i> 05/2019 - 08/2019</th>
+					</tr>
+					<tr>
+						<th><em>Department of Neuroscience</em></th>
+						<th></th>
+					</tr>
+					<tr>
+						<th><em>Principal Investigator:</em>Maribel Rios</th>
+					</tr>
+				<tr>
+					<th><ul>
+						<li>Performed dissection of the model animal and cryostat brain tissue sectioning in regions of interest.</li>
+						<li>Optimized an existing immunofluorescence protocol to best simultaneously visualize pre- and post-synaptic GABAergic synaptic terminals. Processed confocal microscope images using the Synapse Counter plugin for FIJI ImageJ.</li>
+						<li>Performed routine genotyping of the mouse colony and assisted senior members with perfusions.</li>
+				  	</ul></th>
+				</tr>
+				</table>
+			</div>
+			<hr>
+			<h3>Publications</h3>
+			<div id="education">
+				<ul class="fa-ul">
+				  <li><span class="fa-li"><i class="fas fa-bookmark"></i></span>Benchmarking Density Functional Methods for Prediction of Gas-Phase Vibrational Circular Dichroism Spectra.</b> H. R. MacGregor, K. Kahn. <em>In Preparation.</em> (2019)</li>
+				  <li><span class="fa-li"><i class="fas fa-newspaper"></i></i></span>be used to</li>
+				  <li><span class="fa-li"><i class="fas fa-spinner fa-pulse"></i></span>replace bullets</li>
+				  <li><span class="fa-li"><i class="far fa-square"></i></span>in lists</li>
+				</ul>
+			</div>
+
+			<h3>Grants and Fellowships</h3>
+
+			  <ul>
+				<li>
+				  <b><heading1>Undergraduate Research Internship Grant</heading1> <date>09/2019</date></b>
+				  <br>
+				  <b><em>UC Santa Barbara, Cheadle Center for Biodiversity and Ecological Restoration</em></b>
+				</li>
+				<li>
+				  <b><heading1>CCS Summer Undergraduate Research Fellowship</heading1> <date>08/2019</date></b>
+				  <br>
+				  <b><em>UC Santa Barbara, College of Creative Studies</em></b>
+				  <em>The Axline Family</em>
+				</li>
+				<li>
+				  <b><heading1>Building Diversity in Biomedical Sciences Summer Research Program</heading1> <date>05/2019</date></b>
+				  <br>
+				  <b><em>Tufts University, Sackler School of Graduate Biomedical Sciences</em></b>
+				  <em>NIH Award #R25HL007785</em>
+				</li>
+				<li>
+				  <b><heading1>Cooperative International Science and Engineering Internship (Declined)</heading1> <date>05/2019</date></b>
+				  <br>
+				  <b><em>Eindhoven University of Technology & UC Santa Barbara</em></b>
+				  <em>Materials Research Laboratory & NSF REU</em>
+				</li>
+				<li>
+				  <b><heading1>Gorman Scholars Program (Declined)</heading1> <date>05/2019</date></b>
+				  <br>
+				  <b><em>UC Santa Barbara, Center for Science and Engineering Partnerships</em></b>
+				  <em>The Gorman Family</em>
+				</li>
+				<li>
+				  <b><heading1>Partnership for Research and Education in Materials Internship (Declined)</heading1> <date>05/2019</date></b>
+				  <br>
+				  <b><em>University of Texas El Paso & UC Santa Barbara</em></b>
+				  <em>Materials Research Laboratory & UTEP</em>
+				</li>
+				<li>
+				  <b><heading1>Edison Summer Research Program</heading1> <date>06/2018</date></b>
+				  <br>
+				  <b><em>UC Santa Barbara, McNair Scholars Program</em></b>
+				  <em>Edison International</em>
+				</li>
+			  </ul>
+
+			<h3>Honors and Awards</h3>
+
+			  <ul>
+				<li>
+				  <b><heading1>Diversity in Graduate Studies (DIGS) Visitation Program</heading1> <date>11/2019</date></b>
+				  <br>
+				  <b><em>Office of Graduate Admissions, Rensselaer Polytechnic Institute</em></b>
+				</li>
+				<li>
+				  <b><heading1>Purdue Graduate Diversity Visitation Program</heading1> <date>11/2019</date></b>
+				  <br>
+				  <b><em>Office of Graduate Diversity, Purdue University</em></b>
+				</li>
+				<li>
+				  <b><heading1>The Pennsylvania State University STEM Fall Open House</heading1> <date>10/2019</date></b>
+				  <br>
+				  <b><em>Office of Graduate Educational Equity Programs, Penn State University Park</em></b>
+				</li>
+				<li>
+				  <b><heading1>Undergraduate Student Travel Award</heading1> <date>09/2019</date></b>
+				  <br>
+				  <b><em>Annual Biomedical Research Conference for Minority Students</em></b>
+				</li>
+				<li>
+				  <b><heading1>Edison GRE Preparation Course Scholarship</heading1> <date>04/2019</date></b>
+				  <br>
+				  <b><em>McNair Scholars Program, UC Santa Barbara</em></b>
+				  <em>Edison International</em>
+				</li>
+				<li>
+				  <b><heading1>Director's Award</heading1> <date>05/2016</date></b>
+				  <br>
+				  <b><em>Ponderosa High School Music Program</em></b>
+				</li>
+			  </ul>
+
+
+			<h3>Work Experience</h3>
+
+			  <ul>
+				<li>
+				  <b><heading1>Chemistry and Biochemistry Research Storeroom, UC Santa Barbara</heading1> <date>11/2018 -<pre>        </pre></date></b>
+				  <br>
+				  <b><em>Storeroom Assistant</em></b>
+				  <ul>
+					<li>Stocked and filled orders for chemicals and laboratory supplies to research/instructional labs using the 4D relational database management system.</li>
+					<li>Assisted with miscellaneous shipping and receiving duties as assigned by supervisor</li>
+				  </ul>
+				</li>
+
+				<li>
+				  <b><heading1>Disabled Students Program, UC Santa Barbara</heading1> <date>11/2016 -<pre>        </pre></date></b>
+				  <br>
+					<b><em>Notetaker and Exam Proctor</em></b>
+				  <ul>
+					<li>Acted as a liason between clients and their instructor while maintaining the integrity of the testing environment and ensuring that the client received the correct accommodation.</li>
+					<li>Provided a detailed, time-stamped report to supervisors for each accommodation.</li>
+					<li>Took clear, detailed notes for an ongoing course and uploaded them to an online portal in a timely manner.</li>
+				  </ul>
+				</li>
+			  </ul>
+
+			<h3>Outreach and Societies</h3>
+			  <ul>
+				<li>
+				  <b><heading1>Women in Science and Engineering (WiSE) Mentorship Program</heading1> <date>09/2019 -<pre>        </pre></date></b>
+				  <ul><li>Mentored first- and second-year female-identifying students in science and engineering majors.</li></ul>
+				</li>
+
+				<li>
+				  <b><heading1>Biology Mentoring and Engagement</heading1> <date>09/2019 -<pre>        </pre></date></b>
+				  <ul><li>Mentored a small group of first-year pre-biology students.</li></ul>
+				</li>
+
+				<li>
+				  <b><heading1>SciTrek</heading1> <date>01/2019 -<pre>        </pre></date></b>
+				  <ul><li>Worked with a team to develop and implement the organization's first high school program
+			focusing on analytical tests of biological macromolecules.</li><li>Coordinated with ASBMB board members to recruit volunteers for the high school module.</li><li>Worked with a team to compile scientific literature focused on active learning for eventual use
+			in a journal publication.</li></ul>
+				</li>
+
+				<li>
+				  <b><heading1>College of Creative Studies Peer Mentorship Program</heading1> <date>09/2017 -<pre>        </pre></date></b>
+				  <ul><li>Served as a mentor and resource to first-year CCS students with similar academic and career interests.</li></ul>
+				</li>
+
+				<li>
+				  <b><heading1>American Physical Society Conference for Undergraduate Women in Physics</heading1> <date>01/2019 - 01/2019</date></b>
+				  <ul><li>Prepared conference materials and checked in attendees, then served as a point of contact between attendees and
+			organizers for the duration of the event.</li></ul>
+				</li>
+
+				<li>
+				  <b><heading1>American Society for Biochemistry and Molecular Biology (Board Member)</heading1> <date>09/2018 -<pre>        </pre></date></b>
+				  <ul><li>Planned and coordinated chapter events including career development, lab & industry tours, fundraising, research
+			talks, and more.</li><li>Developed and maintained the chapter website and Facebook page.</li></ul>
+				</li>
+
+				<li>
+				  <b><heading1>Residence Hall Association</heading1> <date>09/2016 - 06/2017</date></b>
+				  <ul><li>Worked with a team of House Representatives from Manzanita Village and San Rafael Residance Halls to select
+			which programs would receive university funds and planned activities for students living in UCSB housing on- and
+			off-campus.</li></ul>
+				</li>
+			  </ul>
+		</div>
+		<div id="right-images">
+			<br><br><br><br><br><br><br><br><br><br><br>
+			<img id="icon" title="Funded by the Edison-McNair Summer Research Program" src="Images/McNair_Logo.png">
+			<br><br><br><br>
+			<img id="icon" title="Funded by the College of Creative Studies Create Fund" src="Images/CCS_Logo.jpg">
+			<br><br><br><br><br><br><br><br><br><br><br><br>
+			<img id="icon" title="Funded by the Associated Students Coastal Fund Research Internship Grant" src="Images/Coastal-Fund_Logo.jpg">
+			<br><br><br><br><br><br><br><br>
+			<img src="Images/BDBS_IMG_01.png" title="BDBS Cohort 2019" width="225px">
+			<br>
+			<img src="Images/IMG_1356.JPG" title="Jamie Maguire, Heather MacGregor, and Ledja Lehman" width="225px">
+			<br><br>
+			<img src="Images/IMG_1458.JPG" title="BDBS Symposium 2019" width="225px">
+			<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+			<figure>
+				  <img src="Images/CUWiP.jfif" alt="Poster" width="99%">
+			</figure>
+			<br> <br> <br>
+			<h3>Skills</h3>
+			<div id="education">
+				<table id="headrow">
+					<tr>
+						<th id="icon"><i class="fa fa-code" style="..."></i></th>
+						<th id="icon">Python</th>
+						<th id="icon">Bash</th>
+						<th id="icon">LaTeX</th>
+						<th id="icon">HTML<i class="fab fa-html5"></i> & CSS<i class="fab fa-css3-alt"></i></th>
+					</tr>
+				</table>
+			</div>
+		</div>
 	</div>
 </div>
 </body>
