@@ -21,45 +21,49 @@
 table#contact-info {
 	color: black;
 	background: black;
-	float: right;
-	width: 25px;
-	height: 15px;
-	padding: 10px 10px 7.5px 10px;
-	border-radius: 0px;
-	border: 1px solid black;
+	float: left;
+	height: 0.5%;
+	margin-top: 1.55%;
+	padding: 5px 5px 5px 5px;
 	border-collapse: collapse;
-	padding: 5px;
-	font-size: 7pt;
+	font-size: 8pt;
 	font-weight: normal;
 	text-align: center;
+}
+
+tr#contact-info {
+	color: black;
+	background: black;
+	height: 0.025%;
+	padding: 5px 5px 5px 5px;
+	border-collapse: collapse;
+	font-size: 8pt;
+	font-weight: normal;
 }
 
 th#contact-info {
 	color: white;
 	background: black;
-	float: center;
-	width: 25px;
-	height: 15px;
-	padding: 10px 10px 7.5px 10px;
-	border-radius: 0px;
-	border: 3px solid white;
 	border-collapse: collapse;
-	padding: 5px;
-	font-size: 7pt;
+	padding: 5px 5px 5px 5px;
+	font-size: 8pt;
 	font-weight: normal;
-	text-align: center;
+	text-align: left;
+	word-spacing: 1em;
 }
 
 h3#tit {
-	color: #b3b3b3;
+	color: black;
 	float: left;
 	text-align: left;
-	weight: 100%;
+	font-size: 20pt;
 }
 
 a#icon {
 	color: white;
 	background: black;
+	font-weight: normal;
+	text-decoration: none;
 }
 
 a#icon:hover {
@@ -168,7 +172,21 @@ html, body {
 	float: left;
 	height: 10%;
 	left: 0%;
-	width: 30%;
+	width: 10%;
+	overflow: hidden;
+	padding-bottom: 10px;
+	font-weight: normal;
+	border-bottom: 1.5px solid black;
+}
+
+#topper-c {
+	position: fixed;
+	color: white;
+	background: black;
+	float: left;
+	height: 10%;
+	left: 10%;
+	width: 25%;
 	overflow: hidden;
 	padding-bottom: 10px;
 	font-weight: normal;
@@ -181,44 +199,46 @@ html, body {
 	background: black;
 	float: left;
 	height: 10%;
-	left: 30%;
-	width: 100%;
+	left: 35%;
+	width: 65%;
 	overflow: hidden;
 	padding-bottom: 10px;
 	font-weight: normal;
 	border-bottom: 1.5px solid black;
 }
 
-#left {
+#contents {
 	position: fixed;
 	float: left;
-	height: 90%;
-	left: 2.5%;
-	right: 2.5%;
-	width: 20%;
-	background: #fff;
-	overflow: hidden;
-	padding: 10px;
-	font-size: 9px;
-	font-weight: normal;
-	top: 15%;
-}
-
-#right {
-	position: fixed;
-	float: left;
-	left: 30%;
-	height: 90%;
-	width: 75%;
+	height: 100%;
+	width: 100%;
 	overflow: auto;
 	top: 12.5%;
 }
 
-#right-content {
+#left {
 	position: relative;
 	float: left;
-	width: 55%;
-	background: #fff;
+	width: 15%;
+	left: 2.5%;
+	top: -3.5%;
+	height: 100%;
+	padding: 5px;
+}
+
+#center {
+	position: relative;
+	float: left;
+	width: 60%;
+	height: 100%;
+	padding: 5px;
+}
+
+#right {
+	position: relative;
+	float: right;
+	right: 2.5%;
+	width: 17.5%;
 	height: 100%;
 	padding: 5px;
 }
@@ -228,20 +248,11 @@ html, body {
 	text-align: left;
 	font-size: 9pt;
 	font-weight: normal;
-	width: 95%;
+	width: 99%;
 	border-left: 0px solid #d3d3d3;
 	margin-left: 20px;
 	padding-left: 5px;
 	top: -10px;
-}
-
-#right-images {
-	position: relative;
-	float: right;
-	width: 35%;
-	height: 100%;
-	padding: 5px;
-	right: 50px;
 }
 
 img#icon {
@@ -249,6 +260,7 @@ img#icon {
   float: left;
   width: 40px;
   height: 40px;
+  margin-right: 15px;
 }
 
 .tooltip {
@@ -297,56 +309,59 @@ a#r {
 <body>
 <div id="content">
 	<div id="topper-l">
-
-	</div>
-	<div id="topper-r">
-		<header><h1>Heather MacGregor</h1></header>
-	</div>
-	<div id="left">
-		<table id="contact-info">
-  			<tr>
-	  			<th id="contact-info"><a id="icon" href=""><i class="fa fa-phone" style="font-size:15px"></i></a></th>
-			</tr>
-			<tr>
-				<th id="contact-info"><a id="icon" href="mailto:macgregor@ucsb.edu"><i class="fa fa-envelope" style="font-size:15px"></i></a></th>
-			</tr>
-			<tr>
-				<th id="contact-info"><a id="icon" href="https://linkedin.com/in/heathermacgregor/"><i class="fab fa-linkedin" style="font-size:15px"></i></a></th>
-			</tr>
-			<tr>
-				<th id="contact-info"><a id="icon" href="https://github.com/heathermacgregor"><i class="fab fa-git" style="font-size:15px"></i></a></th>
-			</tr>
-			<tr>
-				<th id="contact-info"><a id="icon" href="https://jsfiddle.net/user/macgregor/fiddles/"><i class="fab fa-jsfiddle"></i></a></th>
-			</tr>
-			<tr>
-				<th id="contact-info"><a id="icon" title="Poster Presentations" href="https://heathermacgregor.github.io/presentations.html"><i class="fas fa-file-powerpoint"></i></a></th>
-			</tr>
-			<tr>
-				<th id="contact-info"><a id="icon" title="Figures" href="https://heathermacgregor.github.io/sample_images.html"><i class="fas fa-file-image"></i></a></th>
-			</tr>
-			<tr>
-				<th id="contact-info"><a id="icon" title="Downloads" href="https://heathermacgregor.github.io/downloads.html"><i class="fas fa-file-archive"></i></a></th>
-			</tr>
-			<tr>
-				<th id="contact-info"><a id="icon" title="Downloads" href="https://heathermacgregor.github.io/downloads.html"><i class="fas fa-copy"></i></a></th>
-			</tr>
-  		</table>
 		<figure>
 			<img title="THE RIBONUCLEASE H DOMAIN OF HIV-1 REVERSE TRANSCRIPTASE [PDB ID 1HRH]" src="Images/1hrh.pdb.png" width="100%">
 		</figure>
-  	</div>
-	<div id="right">
-		<div id="right-content">
-			<h3>Education</h3>
+	</div>
+	<div id="topper-c">
+		<header><h1>Heather MacGregor</h1></header>
+	</div>
+	<div id="topper-r">
+		<table id="contact-info" style="border-right: 0px solid white;">
+  			<tr id="contact-info">
+	  			<th id="contact-info"><a id="icon" href=""><i class="fa fa-phone"></i>  +1-530-350-0171 </a></th>
+				<th id="contact-info"><a id="icon" href="mailto:macgregor@ucsb.edu"><i class="fa fa-envelope"></i>  macgregor@ucsb.edu </a></th>
+			</tr>
+			<tr id="contact-info">
+				<th id="contact-info"><a id="icon" href="https://linkedin.com/in/heathermacgregor/"><i class="fab fa-linkedin"></i>  heathermacgregor</a></th>
+				<th id="contact-info"><a id="icon" href="https://github.com/heathermacgregor"><i class="fab fa-git"></i>  heathermacgregor</a></th>
+			</tr>
+		</table>
+		<table id="contact-info" style="margin-left: 1em;">
+			<tr id="contact-info">
+				<th id="contact-info"><a id="icon" title="Poster Presentations" href="https://heathermacgregor.github.io/presentations.html"><i class="fas fa-file-powerpoint"></i>  Presentations</a></th>
+				<th id="contact-info"><a id="icon" title="Figures" href="https://heathermacgregor.github.io/sample_images.html"><i class="fas fa-file-image"></i>  Figures</a></th>
+			</tr>
+			<tr id="contact-info">
+				<th id="contact-info"><a id="icon" title="Downloads" href="https://heathermacgregor.github.io/downloads.html"><i class="fas fa-file-archive"></i>  Downloads</a></th>
+				<th id="contact-info"><a id="icon" title="Downloads" href="https://heathermacgregor.github.io/downloads.html"><i class="fas fa-copy"></i>  Downloads</a></th>
+			</tr>
+  		</table>
+	</div>
+	<div id="contents">
+		<div id="left">
+			<h3 id="tit">Education</h3>
+			<br><br><br><br><br><br>
+			<h3 id="tit">Research Experience</h3>
+			<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+			<h3 id="tit">Publications <br>& Media</h3>
+			<h3 id="tit">Grants & <br>Fellowships</h3>
+			<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+			<h3 id="tit">Honors & <br>Awards</h3>
+			<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+			<h3 id="tit">Work Experience</h3>
+			<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+			<h3 id="tit">Outreach & <br>Societies</h3>
+  		</div>
+		<div id="center">
 			<div id="education">
 				<table id="headrow">
 					<tr>
-						<th width="75%">University of California, Santa Barbara </th>
+						<th width="80%">University of California, Santa Barbara - <em>College of Creative Studies</em></th>
 						<th><i class="fas fa-calendar-alt"></i> 09/2016 - 07/2020</th>
 					</tr>
 					<tr>
-						<th><em>College of Creative Studies, B.S. Biochemistry</em></th>
+						<th><em>B.S. Biochemistry</em></th>
 					</tr>
 					<tr>
 						<th>GPA 3.8 of 4.0</th>
@@ -355,7 +370,7 @@ a#r {
 				<br>
 				<table id="headrow">
 					<tr>
-						<th width="75%">Ponderosa High School</th>
+						<th width="80%">Ponderosa High School</th>
 						<th><i class="fas fa-calendar-alt"></i> 08/2012 - 05/2016</th>
 					</tr>
 					<tr>
@@ -365,18 +380,19 @@ a#r {
 				<br>
 			</div>
 			<hr>
-			<h3>Research Experience</h3>
 			<div id="education">
 				<table id="headrow">
 					<tr>
-						<th width="75%">University of California, Santa Barbara</th>
-						<th><i class="fas fa-calendar-alt"></i> 03/2018 - <a href="https://people.chem.ucsb.edu/kahn/kalju/"><i class="fas fa-link"></i></a></th>
+						<th width="80%">University of California, Santa Barbara - <em>Department of Chemistry and Biochemistry</em></th>
+						<th style="vertical-align:top; margin-right:1em;"><i class="fas fa-calendar-alt"></i> 03/2018 - </th>
+					</tr>
+				</table>
+				<table id="headrow">
+					<tr>
+						<th width="100%"><em>Project:</em> Quantum Mechanical Calculations of Vibrational Circular Dichroism Spectra</th>
 					</tr>
 					<tr>
-						<th><em>Department of Chemistry and Biochemistry</em></th>
-					</tr>
-					<tr>
-						<th><em>Principal Investigator: </em>Kalju Kahn</th>
+						<th><em>Principal Investigator:</em> <a href="https://people.chem.ucsb.edu/kahn/kalju/">Kalju Kahn</a></th>
 					</tr>
 					<tr>
 						<th><ul>
@@ -387,16 +403,16 @@ a#r {
 				</table>
 				<table id="headrow">
 					<tr>
-						<th width="75%">University of California, Santa Barbara</th>
-						<th><i class="fas fa-calendar-alt"></i> 09/2016 - </th>
+						<th width="80%">University of California, Santa Barbara - <em>Cheadle Center for Biodiversity and <br>Ecological Restoration</em></th>
+						<th style="vertical-align:top; text-align: left; margin-right:2em;"><i class="fas fa-calendar-alt"></i> 09/2019 - </th>
+					</tr>
+				</table>
+				<table id="headrow">
+					<tr>
+						<th width="100%"><em>Project: </em>Arable Sensors</th>
 					</tr>
 					<tr>
-						<th width="75%">Cheadle Center for Biodiversity and Ecological Restoration</th>
-						<th></th>
-					</tr>
-					<tr>
-						<th width="75%"><em>Principal Investigator: </em>Katja Seltmann</th>
-						<th><i class="fas fa-calendar-alt"></i> 09/2018 - </th>
+						<th width="100%"><em>Principal Investigator: </em>Katja Seltmann</th>
 					</tr>
 					<tr>
 						<th><ul>
@@ -405,30 +421,19 @@ a#r {
 							<li>Worked within the Drupal framework to port the application to a web environment.</li>
 				  		</ul></th>
 					</tr>
-					<tr>
-						<th width="75%"><em>Principal Investigator:</em> Andy Lanes</th>
-						<th><i class="fas fa-calendar-alt"></i> 09/2016 - 03/2017</th>
-					</tr>
-					<tr>
-						<th><ul>
-							<li>Collected field data on vernal pools in the Manzanita Village Restoration Area.</li>
-							<li>Removed and documented invasive plant species.</li>
-				  		</ul></th>
-					</tr>
 				</table>
-			</div>
-			<div id="education">
 				<table id="headrow">
 					<tr>
-						<th width="75%"><b>Tufts School of Graduate Biomedical Sciences</b></th>
+						<th width="80%">Tufts School of Graduate Biomedical Sciences - <em>Department of Neuroscience</em></th>
 						<th><i class="fas fa-calendar-alt"></i> 05/2019 - 08/2019</th>
 					</tr>
+				</table>
+				<table id="headrow">
 					<tr>
-						<th><em>Department of Neuroscience</em></th>
-						<th></th>
+						<th width="100%"><em>Project:</em> Arable Sensors</th>
 					</tr>
 					<tr>
-						<th><em>Principal Investigator:</em>Maribel Rios</th>
+						<th width="100%"><em>Principal Investigator:</em> Maribel Rios</th>
 					</tr>
 				<tr>
 					<th><ul>
@@ -438,200 +443,359 @@ a#r {
 				  	</ul></th>
 				</tr>
 				</table>
+				<table id="headrow">
+					<tr>
+						<th width="80%">University of California, Santa Barbara - <em>Cheadle Center for Biodiversity and <br>Ecological Restoration</em></th>
+						<th style="vertical-align:top; text-align: left; margin-right:2em;"><i class="fas fa-calendar-alt"></i> 09/2016 - 03/2017</th>
+					</tr>
+				</table>
+				<table id="headrow">
+					<tr>
+						<th width="100%"><em>Project:</em> Andy Lanes</th>
+					</tr>
+					<tr>
+						<th width="100%"><em>Principal Investigator:</em> Andy Lanes</th>
+					</tr>
+					<tr>
+						<th><ul>
+							<li>Collected field data on vernal pools in the Manzanita Village Restoration Area.</li>
+							<li>Removed and documented invasive plant species.</li>
+				  		</ul></th>
+					</tr>
+				</table>
 			</div>
 			<hr>
-			<h3>Publications</h3>
 			<div id="education">
 				<ul class="fa-ul">
 				  <li><span class="fa-li"><i class="fas fa-bookmark"></i></span>Benchmarking Density Functional Methods for Prediction of Gas-Phase Vibrational Circular Dichroism Spectra.</b> H. R. MacGregor, K. Kahn. <em>In Preparation.</em> (2019)</li>
 				  <li><span class="fa-li"><i class="fas fa-newspaper"></i></i></span>be used to</li>
-				  <li><span class="fa-li"><i class="fas fa-spinner fa-pulse"></i></span>replace bullets</li>
-				  <li><span class="fa-li"><i class="far fa-square"></i></span>in lists</li>
 				</ul>
 			</div>
-
-			<h3>Grants and Fellowships</h3>
-
-			  <ul>
-				<li>
-				  <b><heading1>Undergraduate Research Internship Grant</heading1> <date>09/2019</date></b>
-				  <br>
-				  <b><em>UC Santa Barbara, Cheadle Center for Biodiversity and Ecological Restoration</em></b>
-				</li>
-				<li>
-				  <b><heading1>CCS Summer Undergraduate Research Fellowship</heading1> <date>08/2019</date></b>
-				  <br>
-				  <b><em>UC Santa Barbara, College of Creative Studies</em></b>
-				  <em>The Axline Family</em>
-				</li>
-				<li>
-				  <b><heading1>Building Diversity in Biomedical Sciences Summer Research Program</heading1> <date>05/2019</date></b>
-				  <br>
-				  <b><em>Tufts University, Sackler School of Graduate Biomedical Sciences</em></b>
-				  <em>NIH Award #R25HL007785</em>
-				</li>
-				<li>
-				  <b><heading1>Cooperative International Science and Engineering Internship (Declined)</heading1> <date>05/2019</date></b>
-				  <br>
-				  <b><em>Eindhoven University of Technology & UC Santa Barbara</em></b>
-				  <em>Materials Research Laboratory & NSF REU</em>
-				</li>
-				<li>
-				  <b><heading1>Gorman Scholars Program (Declined)</heading1> <date>05/2019</date></b>
-				  <br>
-				  <b><em>UC Santa Barbara, Center for Science and Engineering Partnerships</em></b>
-				  <em>The Gorman Family</em>
-				</li>
-				<li>
-				  <b><heading1>Partnership for Research and Education in Materials Internship (Declined)</heading1> <date>05/2019</date></b>
-				  <br>
-				  <b><em>University of Texas El Paso & UC Santa Barbara</em></b>
-				  <em>Materials Research Laboratory & UTEP</em>
-				</li>
-				<li>
-				  <b><heading1>Edison Summer Research Program</heading1> <date>06/2018</date></b>
-				  <br>
-				  <b><em>UC Santa Barbara, McNair Scholars Program</em></b>
-				  <em>Edison International</em>
-				</li>
-			  </ul>
-
-			<h3>Honors and Awards</h3>
-
-			  <ul>
-				<li>
-				  <b><heading1>Diversity in Graduate Studies (DIGS) Visitation Program</heading1> <date>11/2019</date></b>
-				  <br>
-				  <b><em>Office of Graduate Admissions, Rensselaer Polytechnic Institute</em></b>
-				</li>
-				<li>
-				  <b><heading1>Purdue Graduate Diversity Visitation Program</heading1> <date>11/2019</date></b>
-				  <br>
-				  <b><em>Office of Graduate Diversity, Purdue University</em></b>
-				</li>
-				<li>
-				  <b><heading1>The Pennsylvania State University STEM Fall Open House</heading1> <date>10/2019</date></b>
-				  <br>
-				  <b><em>Office of Graduate Educational Equity Programs, Penn State University Park</em></b>
-				</li>
-				<li>
-				  <b><heading1>Undergraduate Student Travel Award</heading1> <date>09/2019</date></b>
-				  <br>
-				  <b><em>Annual Biomedical Research Conference for Minority Students</em></b>
-				</li>
-				<li>
-				  <b><heading1>Edison GRE Preparation Course Scholarship</heading1> <date>04/2019</date></b>
-				  <br>
-				  <b><em>McNair Scholars Program, UC Santa Barbara</em></b>
-				  <em>Edison International</em>
-				</li>
-				<li>
-				  <b><heading1>Director's Award</heading1> <date>05/2016</date></b>
-				  <br>
-				  <b><em>Ponderosa High School Music Program</em></b>
-				</li>
-			  </ul>
-
-
-			<h3>Work Experience</h3>
-
-			  <ul>
-				<li>
-				  <b><heading1>Chemistry and Biochemistry Research Storeroom, UC Santa Barbara</heading1> <date>11/2018 -<pre>        </pre></date></b>
-				  <br>
-				  <b><em>Storeroom Assistant</em></b>
-				  <ul>
-					<li>Stocked and filled orders for chemicals and laboratory supplies to research/instructional labs using the 4D relational database management system.</li>
-					<li>Assisted with miscellaneous shipping and receiving duties as assigned by supervisor</li>
-				  </ul>
-				</li>
-
-				<li>
-				  <b><heading1>Disabled Students Program, UC Santa Barbara</heading1> <date>11/2016 -<pre>        </pre></date></b>
-				  <br>
-					<b><em>Notetaker and Exam Proctor</em></b>
-				  <ul>
-					<li>Acted as a liason between clients and their instructor while maintaining the integrity of the testing environment and ensuring that the client received the correct accommodation.</li>
-					<li>Provided a detailed, time-stamped report to supervisors for each accommodation.</li>
-					<li>Took clear, detailed notes for an ongoing course and uploaded them to an online portal in a timely manner.</li>
-				  </ul>
-				</li>
-			  </ul>
-
-			<h3>Outreach and Societies</h3>
-			  <ul>
-				<li>
-				  <b><heading1>Women in Science and Engineering (WiSE) Mentorship Program</heading1> <date>09/2019 -<pre>        </pre></date></b>
-				  <ul><li>Mentored first- and second-year female-identifying students in science and engineering majors.</li></ul>
-				</li>
-
-				<li>
-				  <b><heading1>Biology Mentoring and Engagement</heading1> <date>09/2019 -<pre>        </pre></date></b>
-				  <ul><li>Mentored a small group of first-year pre-biology students.</li></ul>
-				</li>
-
-				<li>
-				  <b><heading1>SciTrek</heading1> <date>01/2019 -<pre>        </pre></date></b>
-				  <ul><li>Worked with a team to develop and implement the organization's first high school program
-			focusing on analytical tests of biological macromolecules.</li><li>Coordinated with ASBMB board members to recruit volunteers for the high school module.</li><li>Worked with a team to compile scientific literature focused on active learning for eventual use
-			in a journal publication.</li></ul>
-				</li>
-
-				<li>
-				  <b><heading1>College of Creative Studies Peer Mentorship Program</heading1> <date>09/2017 -<pre>        </pre></date></b>
-				  <ul><li>Served as a mentor and resource to first-year CCS students with similar academic and career interests.</li></ul>
-				</li>
-
-				<li>
-				  <b><heading1>American Physical Society Conference for Undergraduate Women in Physics</heading1> <date>01/2019 - 01/2019</date></b>
-				  <ul><li>Prepared conference materials and checked in attendees, then served as a point of contact between attendees and
-			organizers for the duration of the event.</li></ul>
-				</li>
-
-				<li>
-				  <b><heading1>American Society for Biochemistry and Molecular Biology (Board Member)</heading1> <date>09/2018 -<pre>        </pre></date></b>
-				  <ul><li>Planned and coordinated chapter events including career development, lab & industry tours, fundraising, research
-			talks, and more.</li><li>Developed and maintained the chapter website and Facebook page.</li></ul>
-				</li>
-
-				<li>
-				  <b><heading1>Residence Hall Association</heading1> <date>09/2016 - 06/2017</date></b>
-				  <ul><li>Worked with a team of House Representatives from Manzanita Village and San Rafael Residance Halls to select
-			which programs would receive university funds and planned activities for students living in UCSB housing on- and
-			off-campus.</li></ul>
-				</li>
-			  </ul>
-		</div>
-		<div id="right-images">
-			<br><br><br><br><br><br><br><br><br><br><br>
-			<img id="icon" title="Funded by the Edison-McNair Summer Research Program" src="Images/McNair_Logo.png">
-			<br><br><br><br>
-			<img id="icon" title="Funded by the College of Creative Studies Create Fund" src="Images/CCS_Logo.jpg">
-			<br><br><br><br><br><br><br><br><br><br><br><br>
-			<img id="icon" title="Funded by the Associated Students Coastal Fund Research Internship Grant" src="Images/Coastal-Fund_Logo.jpg">
-			<br><br><br><br><br><br><br><br>
-			<img src="Images/BDBS_IMG_01.png" title="BDBS Cohort 2019" width="225px">
 			<br>
-			<img src="Images/IMG_1356.JPG" title="Jamie Maguire, Heather MacGregor, and Ledja Lehman" width="225px">
-			<br><br>
-			<img src="Images/IMG_1458.JPG" title="BDBS Symposium 2019" width="225px">
-			<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
-			<figure>
-				  <img src="Images/CUWiP.jfif" alt="Poster" width="99%">
-			</figure>
-			<br> <br> <br>
-			<h3>Skills</h3>
+			<hr>
 			<div id="education">
 				<table id="headrow">
 					<tr>
-						<th id="icon"><i class="fa fa-code" style="..."></i></th>
-						<th id="icon">Python</th>
-						<th id="icon">Bash</th>
-						<th id="icon">LaTeX</th>
-						<th id="icon">HTML<i class="fab fa-html5"></i> & CSS<i class="fab fa-css3-alt"></i></th>
+						<th width="80%">Undergraduate Research Internship Grant</th>
+						<th><i class="fas fa-calendar-alt"></i> 09/2019</th>
+					</tr>
+					<tr>
+						<th width="80%"><em>UC Santa Barbara, Cheadle Center for Biodiversity and Ecological Restoration</em></th>
+					</tr>
+				</table>
+				<br>
+				<table id="headrow">
+					<tr>
+						<th width="80%">CCS Summer Undergraduate Research Fellowship</th>
+						<th><i class="fas fa-calendar-alt"></i> 08/2019</th>
+					</tr>
+					<tr>
+						<th width="80%"><em>UC Santa Barbara, College of Creative Studies</em></th>
+					</tr>
+					<tr>
+						<th width="80%"><em>The Axline Family</em></th>
+					</tr>
+				</table>
+				<br>
+				<table id="headrow">
+					<tr>
+						<th width="80%">Building Diversity in Biomedical Sciences Summer Research Program</th>
+						<th><i class="fas fa-calendar-alt"></i> 05/2019</th>
+					</tr>
+					<tr>
+						<th width="80%"><em>Tufts University, Sackler School of Graduate Biomedical Sciences</em></th>
+					</tr>
+					<tr>
+						<th width="80%"><em>NIH Award #R25HL007785</em></th>
+					</tr>
+				</table>
+				<br>
+				<table id="headrow">
+					<tr>
+						<th width="80%">Cooperative International Science and Engineering Internship<i title="Declined">*</i></th>
+						<th><i class="fas fa-calendar-alt"></i> 05/2019</th>
+					</tr>
+					<tr>
+						<th width="80%"><em>Eindhoven University of Technology & UC Santa Barbara</em></th>
+					</tr>
+					<tr>
+						<th width="80%"><em>Materials Research Laboratory & NSF REU</em></th>
+					</tr>
+				</table>
+				<br>
+				<table id="headrow">
+					<tr>
+						<th width="80%">Gorman Scholars Program<i title="Declined">*</i></th>
+						<th><i class="fas fa-calendar-alt"></i> 05/2019</th>
+					</tr>
+					<tr>
+						<th width="80%"><em>UC Santa Barbara, Center for Science and Engineering Partnerships</em></th>
+					</tr>
+					<tr>
+						<th width="80%"><em>The Gorman Family</em></th>
+					</tr>
+				</table>
+				<br>
+				<table id="headrow">
+					<tr>
+						<th width="80%">Partnership for Research and Education in Materials Internship<i title="Declined">*</i></th>
+						<th><i class="fas fa-calendar-alt"></i> 05/2019</th>
+					</tr>
+					<tr>
+						<th width="80%"><em>University of Texas El Paso & UC Santa Barbara</em></th>
+					</tr>
+					<tr>
+						<th width="80%"><em>Materials Research Laboratory & UTEP</em></th>
+					</tr>
+				</table>
+				<br>
+				<table id="headrow">
+					<tr>
+						<th width="80%">Edison Summer Research Program</th>
+						<th><i class="fas fa-calendar-alt"></i> 06/2018</th>
+					</tr>
+					<tr>
+						<th width="80%"><em>UC Santa Barbara, McNair Scholars Program</em></th>
+					</tr>
+					<tr>
+						<th width="80%"><em>Edison International</em></th>
+					</tr>
+					<tr>
+						<th width="80%"></th>
 					</tr>
 				</table>
 			</div>
+			<br><hr>
+			<div id="education">
+				<table id="headrow">
+					<tr>
+						<th width="80%">Diversity in Graduate Studies (DIGS) Visitation Program</th>
+						<th><i class="fas fa-calendar-alt"></i> 11/2019</th>
+					</tr>
+					<tr>
+						<th width="80%"><em>Office of Graduate Admissions, Rensselaer Polytechnic Institute</em></th>
+					</tr>
+				</table>
+				<br>
+				<table id="headrow">
+					<tr>
+						<th width="80%">Purdue Graduate Diversity Visitation Program</th>
+						<th><i class="fas fa-calendar-alt"></i> 11/2019</th>
+					</tr>
+					<tr>
+						<th width="80%"><em>Office of Graduate Diversity, Purdue University</em></th>
+					</tr>
+				</table>
+				<br>
+				<table id="headrow">
+					<tr>
+						<th width="80%">The Pennsylvania State University STEM Fall Open House</th>
+						<th><i class="fas fa-calendar-alt"></i> 10/2019</th>
+					</tr>
+					<tr>
+						<th width="80%"><em>Office of Graduate Educational Equity Programs, Penn State University Park</em></th>
+					</tr>
+				</table>
+				<br>
+				<table id="headrow">
+					<tr>
+						<th width="80%">Undergraduate Student Travel Award</th>
+						<th><i class="fas fa-calendar-alt"></i> 09/2019</th>
+					</tr>
+					<tr>
+						<th width="80%"><em>Annual Biomedical Research Conference for Minority Students</em></th>
+					</tr>
+				</table>
+				<br>
+				<table id="headrow">
+					<tr>
+						<th width="80%">Edison GRE Preparation Course Scholarship</th>
+						<th><i class="fas fa-calendar-alt"></i> 04/2019</th>
+					</tr>
+					<tr>
+						<th width="80%"><em>McNair Scholars Program, UC Santa Barbara</em></th>
+					</tr>
+					<tr>
+						<th width="80%"><em>Edison International</em></th>
+					</tr>
+				</table>
+				<br>
+				<table id="headrow">
+					<tr>
+						<th width="80%">Director's Award</th>
+						<th><i class="fas fa-calendar-alt"></i> 05/2016</th>
+					</tr>
+					<tr>
+						<th width="80%"><em>Ponderosa High School Music Program</em></th>
+					</tr>
+				</table>
+			</div>
+			<hr>
+			<div id="education">
+				<table id="headrow">
+					<tr>
+						<th width="80%">University of California, Santa Barbara - <em>Department of Chemistry and Biochemistry Research Storeroom</em></th>
+						<th style="vertical-align:top; margin-right:1em;"><i class="fas fa-calendar-alt"></i> 11/2018 - </th>
+					</tr>
+				</table>
+				<table id="headrow">
+					<tr>
+						<th width="100%"><em>Title:</em> Storeroom Assistant</th>
+					</tr>
+					<tr>
+						<th><em>Supervisor:</em> <a href="https://people.chem.ucsb.edu/kahn/kalju/">Adrian Shelor</a></th>
+					</tr>
+					<tr>
+						<th><ul>
+							<li>Stocked and filled orders for chemicals and laboratory supplies to research/instructional labs using the 4D relational database management system.</li>
+							<li>Assisted with miscellaneous shipping and receiving duties as assigned by supervisor</li>
+				 		 </ul></th>
+					</tr>
+				</table>
+				<br>
+				<table id="headrow">
+					<tr>
+						<th width="80%">University of California, Santa Barbara - <em>Disabled Students Program</em></th>
+						<th style="vertical-align:top; margin-right:1em;"><i class="fas fa-calendar-alt"></i> 11/2016 - </th>
+					</tr>
+				</table>
+				<table id="headrow">
+					<tr>
+						<th width="100%"><em>Title:</em> Notetaker and Exam Proctor</th>
+					</tr>
+					<tr>
+						<th><em>Supervisor:</em> <a href="https://people.chem.ucsb.edu/kahn/kalju/">Amanda Kato</a></th>
+					</tr>
+					<tr>
+						<th><ul>
+							<li>Acted as a liason between clients and their instructor while maintaining the integrity of the testing environment and ensuring that the client received the correct accommodation.</li>
+							<li>Provided a detailed, time-stamped report to supervisors for each accommodation.</li>
+							<li>Took clear, detailed notes for an ongoing course and uploaded them to an online portal in a timely manner.</li>
+				  		</ul></th>
+					</tr>
+				</table>
+			</div>
+			<hr>
+			<div id="education">
+				<table id="headrow">
+					<tr>
+						<th width="80%">Women in Science and Engineering (WiSE) Mentorship Program</em></th>
+						<th style="vertical-align:top; margin-right:1em;"><i class="fas fa-calendar-alt"></i> 09/2019 - </th>
+					</tr>
+				</table>
+				<table id="headrow">
+					<tr>
+						<th><ul>
+							<li>Mentored first- and second-year female-identifying students in science and engineering majors.</li>
+						</ul></th>
+					</tr>
+				</table>
+			  	<br>
+				<table id="headrow">
+					<tr>
+						<th width="80%">Biology Mentoring and Engagement</th>
+						<th style="vertical-align:top; margin-right:1em;"><i class="fas fa-calendar-alt"></i> 09/2019 - </th>
+					</tr>
+				</table>
+				<table id="headrow">
+					<tr>
+						<th><ul>
+							<li>Mentored a small group of first-year pre-biology students.</li>
+						</ul></th>
+					</tr>
+				</table>
+				<br>
+				<table id="headrow">
+					<tr>
+						<th width="80%">SciTrek</th>
+						<th style="vertical-align:top; margin-right:1em;"><i class="fas fa-calendar-alt"></i> 01/2019 - </th>
+					</tr>
+				</table>
+				<table id="headrow">
+					<tr>
+						<th><ul>
+							<li>Worked with a team to develop and implement the organization's first high school program
+			focusing on analytical tests of biological macromolecules.</li><li>Coordinated with ASBMB board members to recruit volunteers for the high school module.</li><li>Worked with a team to compile scientific literature focused on active learning for eventual use
+			in a journal publication.</li>
+						</ul></th>
+					</tr>
+				</table>
+				<br>
+				<table id="headrow">
+					<tr>
+						<th width="80%">College of Creative Studies Peer Mentorship Program</th>
+						<th style="vertical-align:top; margin-right:1em;"><i class="fas fa-calendar-alt"></i> 09/2017 - </th>
+					</tr>
+				</table>
+				<table id="headrow">
+					<tr>
+						<th><ul>
+							<li>Served as a mentor and resource to first-year CCS students with similar academic and career interests.</li>
+						</ul></th>
+					</tr>
+				</table>
+				<br>
+				<table id="headrow">
+					<tr>
+						<th width="80%">American Physical Society Conference for Undergraduate Women in Physics</th>
+						<th style="vertical-align:top; margin-right:1em;"><i class="fas fa-calendar-alt"></i> 01/2019 </th>
+					</tr>
+				</table>
+				<table id="headrow">
+					<tr>
+						<th><ul>
+							<li>Prepared conference materials and checked in attendees, then served as a point of contact between attendees and
+			organizers for the duration of the event.</li>
+						</ul></th>
+					</tr>
+				</table>
+				<br>
+				<table id="headrow">
+					<tr>
+						<th width="80%">American Society for Biochemistry and Molecular Biology (Board Member)</th>
+						<th style="vertical-align:top; margin-right:1em;"><i class="fas fa-calendar-alt"></i> 09/2018 - </th>
+					</tr>
+				</table>
+				<table id="headrow">
+					<tr>
+						<th><ul>
+							<li>Planned and coordinated chapter events including career development, lab & industry tours, fundraising, research
+			talks, and more.</li><li>Developed and maintained the chapter website and Facebook page.</li>
+						</ul></th>
+					</tr>
+				</table>
+				<br>
+				<table id="headrow">
+					<tr>
+						<th width="80%">Residence Hall Association</th>
+						<th style="vertical-align:top; margin-right:0em;"><i class="fas fa-calendar-alt"></i> 09/2016 - 06/2017 </th>
+					</tr>
+				</table>
+				<table id="headrow">
+					<tr>
+						<th><ul>
+							<li>Worked with a team of House Representatives from Manzanita Village and San Rafael Residance Halls to select
+			which programs would receive university funds and planned activities for students living in UCSB housing on- and
+			off-campus.</li>
+						</ul></th>
+					</tr>
+				</table>
+			</div>
+		</div>
+		<div id="right">
+			<br><br><br><br><br><br>
+			<img id="icon" title="Funded by the Edison-McNair Summer Research Program" src="Images/McNair_Logo.png">
+			<img id="icon" title="Funded by the College of Creative Studies Create Fund" src="Images/CCS_Logo.jpg">
+			<br><br><br><br><br><br><br><br><br>
+			<img id="icon" title="Funded by the Associated Students Coastal Fund Research Internship Grant" src="Images/Coastal-Fund_Logo.jpg">
+			<br><br><br><br><br><br><br>
+			<img src="Images/IMG_1458.JPG" title="BDBS Symposium 2019" width="225px">
+			<br><br><br><br><br><br><br><br><br>
+			<img src="Images/BDBS_IMG_01.png" title="BDBS Cohort 2019" width="225px">
+			<br><br><br><br><br>
+			<img src="Images/IMG_1356.JPG" title="Jamie Maguire, Heather MacGregor, and Ledja Lehman" width="225px">
+			<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+			<img src="Images/CUWiP.jfif" title="APS CUWiP @ UCSB 2019" width="225px">
 		</div>
 	</div>
 </div>
