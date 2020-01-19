@@ -85,6 +85,18 @@ html, body {
 	border: 0.5% solid black;
 }
 
+#copyright {
+    position: fixed;
+    bottom: 2.5%;
+    right: 1.5%;
+    width: 15%;
+    text-align: right;
+    font-weight: bold;
+	border: 0px solid black;
+	padding: 2px;
+	font-size: 5pt;
+}
+
 #contents {
 	position: fixed;
 	float: left;
