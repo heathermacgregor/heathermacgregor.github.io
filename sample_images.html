@@ -11,6 +11,9 @@
 
     <meta name="viewport" content="width=device-width, initial-scale=1">
 	<link type="text/css" rel="stylesheet" href="style.css">
+    <link rel="stylesheet" type="text/css"
+	  media="screen and (max-device-width: 480px)"
+	  href="mobile.css" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.7/css/all.css">
 	<link href="https://use.fontawesome.com/releases/v5.0.7/css/brands.css" rel="stylesheet">
@@ -25,6 +28,7 @@
       gtag('js', new Date());
 
       gtag('config', 'UA-159185204-1');
+      gtag('set', {'user_id': 'USER_ID'}); // Set the user ID using signed-in user_id.
     </script>
 
 </head>
