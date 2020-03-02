@@ -14,7 +14,6 @@ html, body {
 
 #content {
 	height: 100%;
-	width: 102%;
 	text-align: left;
 	scrollbar-width: 0px;
 }
@@ -104,9 +103,9 @@ html, body {
 #contents {
 	position: fixed;
 	float: left;
-	left: -5%;
+	left: 0%;
 	height: 88%;
-	width: 102%;
+	width: 100%;
 	overflow-y: auto;
 	overflow-x: hidden;
 	top: 12%;
@@ -115,10 +114,10 @@ html, body {
 
 #center {
 	position: relative;
-	float: center;
-	width: 92%;
+	float: left;
 	height: 100%;
-	padding: 1%;
+	width: 90%;
+	padding: 2%;
 }
 
 #right{
@@ -203,7 +202,7 @@ h3#tit {
 	color: black;
 	float: left;
 	text-align: left;
-	font-size: 13pt;
+	font-size: 15pt;
 	text-transform: uppercase;
 }
 
