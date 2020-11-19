@@ -1,0 +1,56 @@
+html, body {
+	height: 100%;
+	width: 100%;
+	overflow: scroll;
+	overflow-x: hidden;
+	margin: 0;
+	font-family: "Helvetica Neue", "Arial", sans-serif;
+    font-weight: normal;
+}
+
+::-webkit-scrollbar {
+    width: 0px;  /* Remove scrollbar space */
+    background: transparent;  /* Optional: just make scrollbar invisible */
+}
+/* Optional: show position indicator in red */
+::-webkit-scrollbar-thumb {
+    background: #FF0000;
+}
+
+#content {
+	height: 100%;
+	width: 75%;
+	position: fixed;
+	color: black;
+	background: white;
+	float: left;
+	left: 12.5%;
+	top: 15%;
+	text-align: left;
+	overflow-y: auto;
+	overflow-x: hidden;
+}
+
+table#references {
+	float: center;
+	width: 80%;
+    height: 85%;
+	font-size: 8pt;
+}
+
+.card {
+        width: 100%;
+        height: auto;
+        position: relative;
+        display: inline-block;
+}
+.card .img-top {
+        display: none;
+        position: absolute;
+        top: 0;
+        left: 0;
+        z-index: 99;
+}
+.card:hover .img-top {
+        display: inline;
+}
